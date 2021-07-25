@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smart Gadgets for Soldiers</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable=no>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div id = "info" >
+      <ul style="list-style-type: none; padding:5px; padding-right:10px;">
+          <li id="temp"> 37.5°C :Temperature</li>
+          <li id="heart">75/min     :Heartbeat</li>
+          <li id="sign"> Sign a :Accelerometer</li>
+          <li id="stress"> :Stress Level<div class="foo green"></div></li> 
+      </ul>
+      </div>
+    <button id="submitBtn" onclick="submitClick()">Avichal</button>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+   <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmtMjSEJtcQsFsxP1MXpeEQ4BitEz7m3Y&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCOqH7-k4CL-pQ3X_AXZzqDypZildf4-J4",
+    authDomain: "smart-gadets-for-soldiers.firebaseapp.com",
+    projectId: "smart-gadets-for-soldiers",
+    storageBucket: "smart-gadets-for-soldiers.appspot.com",
+    messagingSenderId: "326312469250",
+    appId: "1:326312469250:web:ac2b41c20081fbfda4581b",
+    measurementId: "G-1KY9YWCTR2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+  </body>
+</html>

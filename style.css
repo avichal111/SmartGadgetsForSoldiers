@@ -1,0 +1,45 @@
+/* Set the size of the div element that contains the map */
+/* #map {
+    height: 400px;
+    width: 100%;
+  }
+*/
+  html,body{
+    height:100%;
+    margin: 0;
+    padding:0;
+    font-family:  'Trebuchet MS';
+}
+#map {
+     height: 100%;
+     width:100%;
+}
+#info {
+    visibility: hidden;
+    position: relative;
+    width:180px;
+    background-color:rgb(0, 1, 71);
+    border-radius:10px;
+    z-index: 11;
+    color: white;
+}
+
+.foo {
+   float: left;
+   width: 40px;
+   height: 10px;
+   margin: 5px;
+   border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.blue {
+   background: #5c5cd6;
+}
+
+.green {
+   background: #00e600;
+}
+
+.red {
+  background: #ff0000;
+}
