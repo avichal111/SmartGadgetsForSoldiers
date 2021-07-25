@@ -9,15 +9,47 @@
     <script src="./index.js"></script>
   </head>
   <body>
+    <div id="over_map">
+      <button class='button1' name = 'button1' value = "OK" type = "button" style='margin-right:10px' onclick="submitClick()"> Soldier 1 </button>
+      <button class='button1' name = 'button1' value = "OK" type = "button" style='margin-right:10px' onclick="history.go(0)"> Reset </button>
+    </div>
+    
+    <div id="over_map1">  
+      <div>
+          <span>Parameters:</span>
+      </div><br>
+   
+      <div>
+          <span id="oxy">Oxygen Saturation: Normal</span><br><br>
+      </div>
+   
+      <div>
+          <span id="heartb">Heart Rate: Normal </span><br><br>
+      </div>
+    
+      <div>
+          <span id="temper">Body Temperature: Normal</span><br><br>
+      </div>
+
+      <div>
+        <span id="str">Stress: Normal</span><br><br>
+      </div>
+
+      <div>
+      <span id="alert">Alert: None</span><br><br>
+      </div>
+
+  </div>
+
     <div id = "info" >
       <ul style="list-style-type: none; padding:5px; padding-right:10px;">
-          <li id="temp"> 37.5°C :Temperature</li>
-          <li id="heart">75/min     :Heartbeat</li>
-          <li id="sign"> Sign a :Accelerometer</li>
-          <li id="stress"> :Stress Level<div class="foo green"></div></li> 
+        <li id="temp"> Temperature: NaN</li>
+        <li id="heart"> Heartbeat: NaN</li>
+        <li id="sign"> Accelerometer: NaN</li>
+        <li id="oxygen"> SPO2: NaN</li>
+        <li id="stress"> Stress Level<div class="foo white"></div></li> 
       </ul>
       </div>
-    <button id="submitBtn" onclick="submitClick()">Avichal</button>
     <!--The div element for the map -->
     <div id="map"></div>
 
